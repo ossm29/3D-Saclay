@@ -1,11 +1,16 @@
 WorkSpace workspace;
 Camera camera;
+Hud hud;
+
 
 void setup() {
 // Gizmo
 workspace = new WorkSpace(25000);
 // Display setup
  fullScreen(P3D);
+
+ // Setup Head Up Display this.hud = new Hud();
+ this.hud = new Hud();
  smooth(8);
  frameRate(60);
  // Initial drawing
@@ -22,6 +27,7 @@ camera.update();
  background(0x40);
  camera.update();
  workspace.update();
+ hud.update(camera);
 
 
 
@@ -39,16 +45,16 @@ camera.update();
      case '-':
          this.camera.adjustColatitude(-0.01);
          break;
-        
+
      }
      if (key == CODED) {
        switch (keyCode) {
          case UP:
-           this.camera.adjustRadius(0.01);
+           this.camera.adjustRadius(30);
 
            break;
          case DOWN:
-           this.camera.adjustRadius(-0.01);
+           this.camera.adjustRadius(-30);
            break;
          case LEFT:
              this.camera.adjustLongitude(-0.01);
