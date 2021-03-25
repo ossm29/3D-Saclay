@@ -1,30 +1,8 @@
-PShape gizmo;
+WorkSpace workspace;
 
 void setup() {
 // Gizmo
-
-this.gizmo = createShape();
-this.gizmo.beginShape(LINES);
-this.gizmo.noFill();
-this.gizmo.strokeWeight(3.0f);
-
-
-// Red X
-this.gizmo.stroke(0xAAFF3F7F);
-this.gizmo.vertex(0, 0, 0);
-this.gizmo.vertex(1000, 0, 0);
-
-// Green Y
-this.gizmo.stroke(0xAA3FFF7F);
-this.gizmo.vertex(0, 0, 0);
-this.gizmo.vertex(0, 1000, 0);
-
-// Blue Z
-this.gizmo.stroke(0xAA3F7FFFb);
-this.gizmo.vertex(0, 0, 0);
-this.gizmo.vertex( 0, 0, 1000);
-
-this.gizmo.endShape();
+workspace = new WorkSpace(25000);
 // Display setup
  fullScreen(P3D);
  smooth(8);
@@ -37,7 +15,16 @@ camera(0, 2500, 1000,0, 0, 0,0, 0, -1);
  }
 
  void draw(){
-   shape(gizmo);
+ workspace.update();
 
 
  }
+ void keyPressed() {
+   switch (key) {
+     case 'w':
+     case 'W':
+     // Hide/Show grid & Gizmo
+     this.workspace.toggle();
+     break;
+     }
+   }
