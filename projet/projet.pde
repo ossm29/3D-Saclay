@@ -8,6 +8,7 @@ this.gizmo.beginShape(LINES);
 this.gizmo.noFill();
 this.gizmo.strokeWeight(3.0f);
 
+
 // Red X
 this.gizmo.stroke(0xAAFF3F7F);
 this.gizmo.vertex(0, 0, 0);
@@ -19,7 +20,7 @@ this.gizmo.vertex(0, 0, 0);
 this.gizmo.vertex(0, 1000, 0);
 
 // Blue Z
-this.gizmo.stroke(0xAA3F7FFF);
+this.gizmo.stroke(0xAA3F7FFFb);
 this.gizmo.vertex(0, 0, 0);
 this.gizmo.vertex( 0, 0, 1000);
 
