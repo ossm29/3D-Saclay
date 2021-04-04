@@ -1,0 +1,13 @@
+[out:json]
+[timeout:25]
+[bbox:48.6935887,2.1504057,48.7201061,2.2187721];
+// gather results
+(
+  way["railway"="rail"]["operator"="RATP"];
+);
+// print results
+out body;
+>;
+out skel qt;
+
+
