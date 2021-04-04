@@ -79,55 +79,6 @@ PShape grid;
   }
 }
 
-
-class Camera{
-  float longitude;
-  float colatitude;
-  float radius;
-  float x = 0.;
-  float y = 2500.;
-  float z = 1000.;
-
-  Camera(){
-    this.longitude = 0;
-    this.radius = sqrt(0 + pow(2500,2) + pow(1000,2));
-    this.colatitude= acos(2500/radius);
-  }
-  void update(){
-    this.x = radius*sin(colatitude)*cos(longitude);
-    this.y =radius*sin(colatitude)*sin(longitude);
-    this.z = radius*cos(colatitude);
-
-
-    // 3D camera (X+ right / Z+ top / Y+ Front)
-    camera(this.x, this.y, this.z,
-      0, 0, 0,
-      0, 0, -1
-      );
-
-  }
-
-   void adjustRadius(float offset){
-     if(this.radius >= (width * 0.5) && this.radius < width * 3.0){
-       this.radius = this.radius+offset;
-     }
-
-   }
-
-   void adjustLongitude(float delta){
-     if(this.longitude >= (-3*PI/2) && this.longitude < PI/2){
-       this.longitude = this.longitude+delta;
-     }
-
-   }
-
-  void adjustColatitude(float delta){
-    if(this.colatitude >= pow(10,-6) && this.colatitude < PI/2){
-      this.colatitude = this.colatitude+delta;
-    }
-
-  }
-
 /*
 void keyPressed() {
   if (key == CODED) {
@@ -157,4 +108,3 @@ break;
   }
 }
 */
-}
