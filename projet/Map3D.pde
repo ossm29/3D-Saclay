@@ -69,7 +69,7 @@ public class Map3D {
       exitActual();
     }
 
-    // Load RGE Alti elevation heightmap 
+    // Load RGE Alti elevation heightmap
     this.data = loadBytes(fileName);
     
     // Force flat projection if false (for debug purposes)
