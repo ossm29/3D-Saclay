@@ -3,6 +3,7 @@ Camera camera;
 Hud hud;
 Map3D map;
 Land land;
+Gpx gpx;
 
 void setup() {
   // Gizmo
@@ -29,6 +30,7 @@ void setup() {
   // Load Height Map
   this.map = new Map3D("paris_saclay.data");
   this.land = new Land(this.map,"paris_saclay.jpg");
+  this.gpx = new Gpx(this.map, "trail.geojson");
 }
 
 void draw(){
@@ -38,26 +40,11 @@ void draw(){
   this.hud.update(this.camera);
   this.camera.update();
   this.land.update();
+  this.gpx.update();
 }
 
  void keyPressed() {
-   switch (key) {
-     case 'w':
-     case 'W':
-       // Hide/Show Land
-       this.land.toggle();
-       // Hide/Show grid & Gizmo
-       //this.workspace.toggle();
-       break;
-     case '+':
-         this.camera.adjustColatitude(0.01);
-         break;
-     case '-':
-         this.camera.adjustColatitude(-0.01);
-         break;
-
-     }
-     if (key == CODED) {
+if (key == CODED) {
        switch (keyCode) {
          case UP:
            this.camera.adjustColatitude(-PI/100);
@@ -72,5 +59,30 @@ void draw(){
              this.camera.adjustLongitude(PI/100);
              break;
        }
-     }
+ }
+ switch (key) {
+   case 'w':
+   case 'W':
+     // Hide/Show Land
+     this.land.toggle();
+     // Hide/Show grid & Gizmo
+     //this.workspace.toggle();
+     break;
+   case 'G':
+   this.gpx.toggle();
+   break;
+   case '+':
+       this.camera.adjustColatitude(0.01);
+       break;
+   case '-':
+       this.camera.adjustColatitude(-0.01);
+       break;
+
    }
+   
+}
+
+void mousePressed() {
+  if (mouseButton == LEFT)
+    this.gpx.clic(mouseX, mouseY);
+}
