@@ -48,8 +48,7 @@ class Roads {
       PShape lane;
       lane = createShape();
       lane.beginShape(QUAD_STRIP);
-      lane.stroke(255, 255, 255);
-      lane.fill(255, 255, 255);
+
 
       JSONObject feature = features.getJSONObject(f);
       if (!feature.hasKey("geometry"))
@@ -118,6 +117,8 @@ class Roads {
          break;
         }
         // Display threshold (increase if more performance needed...) if (laneWidth < 1.0f)
+        lane.stroke(laneColor);
+        lane.fill(laneColor);
       JSONObject geometry = feature.getJSONObject("geometry");
       switch (geometry.getString("type", "undefined")) {
 
