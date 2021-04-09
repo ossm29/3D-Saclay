@@ -37,7 +37,7 @@ class Railways {
 
 
     //this.railways.noFill();
-    float laneWidth = .75;
+    float laneWidth = 3;
 
 
     for (int f=0; f<features.size(); f++) {
@@ -45,7 +45,8 @@ class Railways {
       lane = createShape();
       lane.beginShape(QUAD_STRIP);
       lane.stroke(255, 255, 255);
-      lane.noFill();
+      lane.fill(255, 255, 255);
+
       JSONObject feature = features.getJSONObject(f);
       if (!feature.hasKey("geometry"))
         break;
@@ -76,6 +77,10 @@ class Railways {
               lane.vertex(mp1.x - Va.x, mp1.y - Va.y, mp1.z);
               lane.normal(0.0f, 0.0f, 1.0f);
               lane.vertex(mp1.x + Va.x, mp1.y + Va.y, mp1.z);
+              lane.normal(0.0f, 0.0f, 1.0f);
+              lane.vertex(mp2.x - Va.x, mp2.y - Va.y, mp2.z);
+              lane.normal(0.0f, 0.0f, 1.0f);
+              lane.vertex(mp2.x + Va.x, mp2.y + Va.y, mp2.z);
             }
           }
         break;
@@ -86,7 +91,7 @@ class Railways {
         break;
       }
 
-
+      lane.fill(255, 255, 255);
       lane.endShape();
 
       railways.addChild(lane);
