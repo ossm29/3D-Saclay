@@ -5,7 +5,7 @@ Map3D map;
 Land land;
 Gpx gpx;
 Railways railways;
-
+Roads roads;
 void setup() {
   // Gizmo
   workspace = new WorkSpace(25000);
@@ -33,6 +33,7 @@ void setup() {
   this.land = new Land(this.map,"paris_saclay.jpg");
   this.gpx = new Gpx(this.map, "trail.geojson");
   this.railways = new Railways(this.map, "railways.geojson");
+  this.roads = new Roads(this.map, "roads.geojson");
 }
 
 void draw(){
@@ -44,6 +45,7 @@ void draw(){
   this.land.update();
   this.gpx.update();
   this.railways.update();
+  this.roads.update();
 }
 
  void keyPressed() {
