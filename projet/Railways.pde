@@ -60,12 +60,16 @@ class Railways {
           for (int p=0; p < coordinates.size()-1; p++) {
             JSONArray point1 = coordinates.getJSONArray(p);
             Map3D.GeoPoint gp1 = this.map.new GeoPoint(point1.getFloat(0), point1.getFloat(1));
-            Map3D.ObjectPoint mp1 = this.map.new ObjectPoint(gp1);
+            //Map3D.ObjectPoint mp1 = this.map.new ObjectPoint(gp1);
 
             JSONArray point2 = coordinates.getJSONArray(p+1);
             Map3D.GeoPoint gp2 = this.map.new GeoPoint(point2.getFloat(0), point2.getFloat(1));
-            Map3D.ObjectPoint mp2 = this.map.new ObjectPoint(gp2);
+            //Map3D.ObjectPoint mp2 = this.map.new ObjectPoint(gp2);
             if(gp1.inside() && gp2.inside() ){
+              gp1.elevation += 7.5d;
+              gp2.elevation += 7.5d;
+              Map3D.ObjectPoint mp1 = this.map.new ObjectPoint(gp1);
+              Map3D.ObjectPoint mp2 = this.map.new ObjectPoint(gp2);
               //this.railways.vertex(mp.x, mp.y, mp.z);
               PVector Va = new PVector(mp1.y - mp2.y, mp2.x - mp1.x).normalize().mult(laneWidth/2.0f);
               lane.normal(0.0f, 0.0f, 1.0f);

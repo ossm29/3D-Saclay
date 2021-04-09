@@ -1,0 +1,1804 @@
+{
+  "type": "FeatureCollection",
+  "generator": "overpass-ide",
+  "copyright": "The data included in this document is from www.openstreetmap.org. The data is made available under ODbL.",
+  "timestamp": "2021-03-11T18:28:27Z",
+  "features": [
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/4746303",
+        "electrified": "contact_line",
+        "frequency": "0",
+        "gauge": "1435",
+        "importance": "regional",
+        "name": "Ligne de Sceaux (RER B4)",
+        "operator": "RATP",
+        "railway": "rail",
+        "short_name": "RER B4",
+        "start_date": "1854-07-29",
+        "usage": "main",
+        "voltage": "1500"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            2.1841371,
+            48.6980952
+          ],
+          [
+            2.1842441,
+            48.6981338
+          ],
+          [
+            2.1843634,
+            48.6981735
+          ],
+          [
+            2.1845742,
+            48.6982587
+          ]
+        ]
+      },
+      "id": "way/4746303"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/12872726",
+        "electrified": "contact_line",
+        "frequency": "0",
+        "gauge": "1435",
+        "importance": "regional",
+        "name": "Ligne de Sceaux (RER B4)",
+        "operator": "RATP",
+        "railway": "rail",
+        "short_name": "RER B4",
+        "start_date": "1867-08-26",
+        "usage": "main",
+        "voltage": "1500"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            2.1790442,
+            48.6971709
+          ],
+          [
+            2.1781708,
+            48.6970195
+          ],
+          [
+            2.1775371,
+            48.6969116
+          ],
+          [
+            2.1723492,
+            48.6960652
+          ],
+          [
+            2.1716791,
+            48.6959747
+          ],
+          [
+            2.1710897,
+            48.6959377
+          ],
+          [
+            2.1705141,
+            48.6959495
+          ],
+          [
+            2.1698713,
+            48.6960063
+          ],
+          [
+            2.1677131,
+            48.696359
+          ],
+          [
+            2.1673028,
+            48.6964243
+          ],
+          [
+            2.1667921,
+            48.6964775
+          ],
+          [
+            2.1664231,
+            48.6964951
+          ],
+          [
+            2.1658209,
+            48.6964827
+          ],
+          [
+            2.1652549,
+            48.6964203
+          ],
+          [
+            2.1647495,
+            48.6963263
+          ],
+          [
+            2.1641683,
+            48.6961627
+          ],
+          [
+            2.1636799,
+            48.69597
+          ],
+          [
+            2.163297,
+            48.6957667
+          ],
+          [
+            2.163126,
+            48.695672
+          ],
+          [
+            2.1624448,
+            48.6952626
+          ]
+        ]
+      },
+      "id": "way/12872726"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/15093806",
+        "bridge": "yes",
+        "electrified": "contact_line",
+        "frequency": "0",
+        "gauge": "1435",
+        "importance": "regional",
+        "layer": "1",
+        "name": "Ligne de Sceaux (RER B4)",
+        "operator": "RATP",
+        "railway": "rail",
+        "short_name": "RER B4",
+        "start_date": "1854-07-29",
+        "usage": "main",
+        "voltage": "1500"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            2.1920801,
+            48.7051268
+          ],
+          [
+            2.1924611,
+            48.7052965
+          ],
+          [
+            2.1928332,
+            48.7054282
+          ]
+        ]
+      },
+      "id": "way/15093806"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/23795603",
+        "bridge": "yes",
+        "electrified": "contact_line",
+        "frequency": "0",
+        "gauge": "1435",
+        "importance": "regional",
+        "layer": "1",
+        "name": "Ligne de Sceaux (RER B4)",
+        "operator": "RATP",
+        "railway": "rail",
+        "short_name": "RER B4",
+        "start_date": "1854-07-29",
+        "usage": "main",
+        "voltage": "1500"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            2.18668,
+            48.7003409
+          ],
+          [
+            2.1869216,
+            48.7008022
+          ]
+        ]
+      },
+      "id": "way/23795603"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/23795604",
+        "electrified": "contact_line",
+        "frequency": "0",
+        "gauge": "1435",
+        "importance": "regional",
+        "name": "Ligne de Sceaux (RER B4)",
+        "operator": "RATP",
+        "railway": "rail",
+        "short_name": "RER B4",
+        "start_date": "1854-07-29",
+        "usage": "main",
+        "voltage": "1500"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            2.1869216,
+            48.7008022
+          ],
+          [
+            2.1871585,
+            48.7012175
+          ],
+          [
+            2.1872733,
+            48.7014091
+          ],
+          [
+            2.1874064,
+            48.7015803
+          ],
+          [
+            2.187543,
+            48.7017564
+          ],
+          [
+            2.187712,
+            48.7019352
+          ],
+          [
+            2.1880317,
+            48.7022476
+          ],
+          [
+            2.1884129,
+            48.7025352
+          ],
+          [
+            2.1907332,
+            48.7042856
+          ],
+          [
+            2.1913048,
+            48.7046972
+          ],
+          [
+            2.1917178,
+            48.7049445
+          ],
+          [
+            2.1918242,
+            48.7050049
+          ],
+          [
+            2.1920801,
+            48.7051268
+          ]
+        ]
+      },
+      "id": "way/23795604"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/30037881",
+        "electrified": "contact_line",
+        "frequency": "0",
+        "gauge": "1435",
+        "importance": "regional",
+        "name": "Ligne de Sceaux (RER B4)",
+        "operator": "RATP",
+        "railway": "rail",
+        "short_name": "RER B4",
+        "start_date": "1854-07-29",
+        "usage": "main",
+        "voltage": "1500"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            2.1928332,
+            48.7054282
+          ],
+          [
+            2.1931878,
+            48.7055257
+          ],
+          [
+            2.1935464,
+            48.7056138
+          ],
+          [
+            2.194033,
+            48.7056947
+          ],
+          [
+            2.1945013,
+            48.7057459
+          ],
+          [
+            2.1950682,
+            48.7057757
+          ],
+          [
+            2.208155,
+            48.7058141
+          ],
+          [
+            2.2087445,
+            48.7058426
+          ],
+          [
+            2.2099222,
+            48.7059606
+          ],
+          [
+            2.2106259,
+            48.7060173
+          ],
+          [
+            2.2111611,
+            48.7060254
+          ],
+          [
+            2.2116884,
+            48.7060013
+          ],
+          [
+            2.2122022,
+            48.7059531
+          ],
+          [
+            2.2127519,
+            48.7058634
+          ],
+          [
+            2.2142153,
+            48.7055493
+          ],
+          [
+            2.2148282,
+            48.7054413
+          ],
+          [
+            2.215413,
+            48.7053867
+          ],
+          [
+            2.2158805,
+            48.7053787
+          ],
+          [
+            2.2164888,
+            48.7054039
+          ],
+          [
+            2.2180714,
+            48.7055297
+          ],
+          [
+            2.2185938,
+            48.7055522
+          ],
+          [
+            2.2192218,
+            48.7055536
+          ],
+          [
+            2.2198015,
+            48.7055237
+          ],
+          [
+            2.2215448,
+            48.7053794
+          ],
+          [
+            2.2220425,
+            48.7053465
+          ],
+          [
+            2.2226677,
+            48.7053444
+          ],
+          [
+            2.2233031,
+            48.7053938
+          ],
+          [
+            2.2247761,
+            48.7055629
+          ],
+          [
+            2.2253651,
+            48.7056039
+          ]
+        ]
+      },
+      "id": "way/30037881"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/69706095",
+        "electrified": "contact_line",
+        "frequency": "0",
+        "gauge": "1435",
+        "importance": "regional",
+        "name": "Ligne de Sceaux (RER B4)",
+        "operator": "RATP",
+        "railway": "rail",
+        "short_name": "RER B4",
+        "start_date": "1854-07-29",
+        "usage": "main",
+        "voltage": "1500"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            2.1849901,
+            48.6984608
+          ],
+          [
+            2.1851616,
+            48.6985593
+          ],
+          [
+            2.1853544,
+            48.6986849
+          ],
+          [
+            2.1855328,
+            48.698814
+          ],
+          [
+            2.1856856,
+            48.6989309
+          ],
+          [
+            2.1858543,
+            48.69908
+          ],
+          [
+            2.1859894,
+            48.6992155
+          ],
+          [
+            2.1861051,
+            48.6993447
+          ],
+          [
+            2.1862378,
+            48.6995069
+          ],
+          [
+            2.186337,
+            48.6996533
+          ],
+          [
+            2.1864502,
+            48.6998408
+          ],
+          [
+            2.1865647,
+            48.7000447
+          ],
+          [
+            2.18668,
+            48.7003409
+          ]
+        ]
+      },
+      "id": "way/69706095"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/69706097",
+        "bridge": "yes",
+        "electrified": "contact_line",
+        "frequency": "0",
+        "gauge": "1435",
+        "importance": "regional",
+        "layer": "1",
+        "name": "Ligne de Sceaux (RER B4)",
+        "operator": "RATP",
+        "railway": "rail",
+        "short_name": "RER B4",
+        "start_date": "1854-07-29",
+        "usage": "main",
+        "voltage": "1500"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            2.1845742,
+            48.6982587
+          ],
+          [
+            2.1847797,
+            48.6983516
+          ],
+          [
+            2.1849901,
+            48.6984608
+          ]
+        ]
+      },
+      "id": "way/69706097"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/80885775",
+        "bridge": "yes",
+        "electrified": "contact_line",
+        "frequency": "0",
+        "gauge": "1435",
+        "importance": "regional",
+        "layer": "1",
+        "name": "Ligne de Sceaux (RER B4)",
+        "operator": "RATP",
+        "railway": "rail",
+        "short_name": "RER B4",
+        "start_date": "1867-08-26",
+        "usage": "main",
+        "voltage": "1500"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            2.1624448,
+            48.6952626
+          ],
+          [
+            2.1623243,
+            48.6951835
+          ]
+        ]
+      },
+      "id": "way/80885775"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/80885778",
+        "electrified": "contact_line",
+        "frequency": "0",
+        "gauge": "1435",
+        "importance": "regional",
+        "name": "Ligne de Sceaux (RER B4)",
+        "operator": "RATP",
+        "railway": "rail",
+        "short_name": "RER B4",
+        "start_date": "1867-08-26",
+        "usage": "main",
+        "voltage": "1500"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            2.1623243,
+            48.6951835
+          ],
+          [
+            2.161672,
+            48.6947803
+          ],
+          [
+            2.1613279,
+            48.6945886
+          ],
+          [
+            2.1610986,
+            48.6944775
+          ],
+          [
+            2.1606418,
+            48.6942834
+          ],
+          [
+            2.1602145,
+            48.6941381
+          ],
+          [
+            2.1599279,
+            48.6940526
+          ],
+          [
+            2.1594477,
+            48.6939527
+          ],
+          [
+            2.1589564,
+            48.6938766
+          ],
+          [
+            2.1585176,
+            48.6938363
+          ]
+        ]
+      },
+      "id": "way/80885778"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/80885789",
+        "bridge": "yes",
+        "electrified": "contact_line",
+        "frequency": "0",
+        "gauge": "1435",
+        "importance": "regional",
+        "layer": "1",
+        "name": "Ligne de Sceaux (RER B4)",
+        "operator": "RATP",
+        "railway": "rail",
+        "short_name": "RER B4",
+        "start_date": "1867-08-26",
+        "usage": "main",
+        "voltage": "1500"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            2.153586,
+            48.6947114
+          ],
+          [
+            2.1532839,
+            48.6947934
+          ]
+        ]
+      },
+      "id": "way/80885789"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/80885792",
+        "electrified": "contact_line",
+        "frequency": "0",
+        "gauge": "1435",
+        "importance": "regional",
+        "name": "Ligne de Sceaux (RER B4)",
+        "operator": "RATP",
+        "railway": "rail",
+        "short_name": "RER B4",
+        "start_date": "1867-08-26",
+        "usage": "main",
+        "voltage": "1500"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            2.1532839,
+            48.6947934
+          ],
+          [
+            2.1526331,
+            48.6949696
+          ],
+          [
+            2.149983,
+            48.6956846
+          ],
+          [
+            2.1409268,
+            48.6981279
+          ],
+          [
+            2.1405143,
+            48.6982227
+          ],
+          [
+            2.1400895,
+            48.6982958
+          ],
+          [
+            2.1396764,
+            48.6983459
+          ]
+        ]
+      },
+      "id": "way/80885792"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/103240654",
+        "bridge": "yes",
+        "electrified": "contact_line",
+        "frequency": "0",
+        "gauge": "1435",
+        "importance": "regional",
+        "layer": "1",
+        "name": "Ligne de Sceaux (RER B4)",
+        "operator": "RATP",
+        "railway": "rail",
+        "short_name": "RER B4",
+        "start_date": "1854-07-29",
+        "usage": "main",
+        "voltage": "1500"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            2.1920619,
+            48.70517
+          ],
+          [
+            2.1924237,
+            48.7053217
+          ],
+          [
+            2.1928076,
+            48.705456
+          ]
+        ]
+      },
+      "id": "way/103240654"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/103240656",
+        "electrified": "contact_line",
+        "frequency": "0",
+        "gauge": "1435",
+        "importance": "regional",
+        "name": "Ligne de Sceaux (RER B4)",
+        "operator": "RATP",
+        "railway": "rail",
+        "short_name": "RER B4",
+        "start_date": "1854-07-29",
+        "usage": "main",
+        "voltage": "1500"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            2.1841028,
+            48.6981201
+          ],
+          [
+            2.1842531,
+            48.6981722
+          ],
+          [
+            2.1845807,
+            48.6983035
+          ]
+        ]
+      },
+      "id": "way/103240656"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/103240657",
+        "bridge": "yes",
+        "electrified": "contact_line",
+        "frequency": "0",
+        "gauge": "1435",
+        "importance": "regional",
+        "layer": "1",
+        "name": "Ligne de Sceaux (RER B4)",
+        "operator": "RATP",
+        "railway": "rail",
+        "short_name": "RER B4",
+        "start_date": "1854-07-29",
+        "usage": "main",
+        "voltage": "1500"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            2.1845807,
+            48.6983035
+          ],
+          [
+            2.1847646,
+            48.6983867
+          ],
+          [
+            2.1849321,
+            48.6984742
+          ]
+        ]
+      },
+      "id": "way/103240657"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/103240658",
+        "electrified": "contact_line",
+        "frequency": "0",
+        "gauge": "1435",
+        "importance": "regional",
+        "name": "Ligne de Sceaux (RER B4)",
+        "operator": "RATP",
+        "railway": "rail",
+        "short_name": "RER B4",
+        "start_date": "1854-07-29",
+        "usage": "main",
+        "voltage": "1500"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            2.1868676,
+            48.7008083
+          ],
+          [
+            2.1871348,
+            48.7012738
+          ],
+          [
+            2.1872361,
+            48.7014458
+          ],
+          [
+            2.1873604,
+            48.7016057
+          ],
+          [
+            2.1874953,
+            48.7017726
+          ],
+          [
+            2.1876438,
+            48.7019412
+          ],
+          [
+            2.1880154,
+            48.7022968
+          ],
+          [
+            2.1883597,
+            48.7025461
+          ],
+          [
+            2.1911402,
+            48.7046431
+          ],
+          [
+            2.1914284,
+            48.7048318
+          ],
+          [
+            2.1917979,
+            48.7050445
+          ],
+          [
+            2.1920619,
+            48.70517
+          ]
+        ]
+      },
+      "id": "way/103240658"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/103240660",
+        "gauge": "1435",
+        "operator": "RATP",
+        "railway": "rail",
+        "service": "siding",
+        "start_date": "1854-07-29"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            2.1790268,
+            48.6971978
+          ],
+          [
+            2.1804845,
+            48.6974405
+          ],
+          [
+            2.1819825,
+            48.6976858
+          ],
+          [
+            2.1826965,
+            48.6978003
+          ],
+          [
+            2.1831418,
+            48.6978783
+          ],
+          [
+            2.1836015,
+            48.6979705
+          ],
+          [
+            2.183779,
+            48.6980215
+          ]
+        ]
+      },
+      "id": "way/103240660"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/103240669",
+        "gauge": "1435",
+        "operator": "RATP",
+        "railway": "rail",
+        "service": "yard",
+        "start_date": "1854-07-29"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            2.1828429,
+            48.6977842
+          ],
+          [
+            2.182525,
+            48.6977459
+          ],
+          [
+            2.1822431,
+            48.697721
+          ],
+          [
+            2.1819825,
+            48.6976858
+          ]
+        ]
+      },
+      "id": "way/103240669"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/103240673",
+        "electrified": "contact_line",
+        "frequency": "0",
+        "gauge": "1435",
+        "importance": "regional",
+        "name": "Ligne de Sceaux (RER B4)",
+        "operator": "RATP",
+        "railway": "rail",
+        "short_name": "RER B4",
+        "start_date": "1854-07-29",
+        "usage": "main",
+        "voltage": "1500"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            2.1928076,
+            48.705456
+          ],
+          [
+            2.1930133,
+            48.705517
+          ],
+          [
+            2.1934796,
+            48.7056338
+          ],
+          [
+            2.1939624,
+            48.7057195
+          ],
+          [
+            2.194475,
+            48.7057775
+          ],
+          [
+            2.1950766,
+            48.7058066
+          ],
+          [
+            2.2081672,
+            48.7058465
+          ],
+          [
+            2.2087776,
+            48.7058755
+          ],
+          [
+            2.2097543,
+            48.7059764
+          ],
+          [
+            2.2105858,
+            48.7060476
+          ],
+          [
+            2.2111764,
+            48.7060584
+          ],
+          [
+            2.2117143,
+            48.7060338
+          ],
+          [
+            2.212273,
+            48.705975
+          ],
+          [
+            2.2127822,
+            48.7058908
+          ],
+          [
+            2.2139526,
+            48.7056475
+          ],
+          [
+            2.2142748,
+            48.7055714
+          ],
+          [
+            2.2148368,
+            48.7054741
+          ],
+          [
+            2.2153526,
+            48.7054219
+          ],
+          [
+            2.2158399,
+            48.705411
+          ],
+          [
+            2.2163964,
+            48.7054306
+          ],
+          [
+            2.2175809,
+            48.7055271
+          ],
+          [
+            2.2184751,
+            48.7055823
+          ],
+          [
+            2.2191296,
+            48.7055874
+          ],
+          [
+            2.2197895,
+            48.7055583
+          ],
+          [
+            2.221657,
+            48.705403
+          ],
+          [
+            2.2221751,
+            48.7053762
+          ],
+          [
+            2.2226656,
+            48.7053776
+          ],
+          [
+            2.2231298,
+            48.7054088
+          ],
+          [
+            2.2249124,
+            48.7056085
+          ],
+          [
+            2.2253665,
+            48.7056332
+          ]
+        ]
+      },
+      "id": "way/103240673"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/103240674",
+        "bridge": "yes",
+        "electrified": "contact_line",
+        "frequency": "0",
+        "gauge": "1435",
+        "importance": "regional",
+        "layer": "1",
+        "name": "Ligne de Sceaux (RER B4)",
+        "operator": "RATP",
+        "railway": "rail",
+        "short_name": "RER B4",
+        "start_date": "1854-07-29",
+        "usage": "main",
+        "voltage": "1500"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            2.1866281,
+            48.7003528
+          ],
+          [
+            2.1868676,
+            48.7008083
+          ]
+        ]
+      },
+      "id": "way/103240674"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/103240675",
+        "electrified": "contact_line",
+        "frequency": "0",
+        "gauge": "1435",
+        "importance": "regional",
+        "name": "Ligne de Sceaux (RER B4)",
+        "operator": "RATP",
+        "railway": "rail",
+        "short_name": "RER B4",
+        "start_date": "1854-07-29",
+        "usage": "main",
+        "voltage": "1500"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            2.1849321,
+            48.6984742
+          ],
+          [
+            2.1850174,
+            48.6985211
+          ],
+          [
+            2.1851781,
+            48.6986201
+          ],
+          [
+            2.1853815,
+            48.6987566
+          ],
+          [
+            2.1854822,
+            48.6988256
+          ],
+          [
+            2.1856444,
+            48.6989471
+          ],
+          [
+            2.1858034,
+            48.6990875
+          ],
+          [
+            2.1859443,
+            48.6992317
+          ],
+          [
+            2.1860821,
+            48.6993808
+          ],
+          [
+            2.1862082,
+            48.6995434
+          ],
+          [
+            2.1863145,
+            48.6997013
+          ],
+          [
+            2.186427,
+            48.6998917
+          ],
+          [
+            2.1865454,
+            48.700099
+          ],
+          [
+            2.1866281,
+            48.7003528
+          ]
+        ]
+      },
+      "id": "way/103240675"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/103248849",
+        "bridge": "yes",
+        "electrified": "contact_line",
+        "frequency": "0",
+        "gauge": "1435",
+        "importance": "regional",
+        "layer": "1",
+        "name": "Ligne de Sceaux (RER B4)",
+        "operator": "RATP",
+        "railway": "rail",
+        "short_name": "RER B4",
+        "start_date": "1867-08-26",
+        "usage": "main",
+        "voltage": "1500"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            2.1585176,
+            48.6938363
+          ],
+          [
+            2.1584511,
+            48.6938329
+          ]
+        ]
+      },
+      "id": "way/103248849"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/103248854",
+        "electrified": "contact_line",
+        "frequency": "0",
+        "gauge": "1435",
+        "importance": "regional",
+        "name": "Ligne de Sceaux (RER B4)",
+        "operator": "RATP",
+        "railway": "rail",
+        "short_name": "RER B4",
+        "start_date": "1867-08-26",
+        "usage": "main",
+        "voltage": "1500"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            2.1585084,
+            48.6938709
+          ],
+          [
+            2.1588117,
+            48.6938936
+          ],
+          [
+            2.1593148,
+            48.6939613
+          ],
+          [
+            2.1599355,
+            48.6940886
+          ],
+          [
+            2.1605474,
+            48.6942812
+          ],
+          [
+            2.1610927,
+            48.6945087
+          ],
+          [
+            2.1615226,
+            48.6947352
+          ],
+          [
+            2.1622945,
+            48.6952109
+          ]
+        ]
+      },
+      "id": "way/103248854"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/103248855",
+        "electrified": "contact_line",
+        "frequency": "0",
+        "gauge": "1435",
+        "importance": "regional",
+        "name": "Ligne de Sceaux (RER B4)",
+        "operator": "RATP",
+        "railway": "rail",
+        "short_name": "RER B4",
+        "start_date": "1867-08-26",
+        "usage": "main",
+        "voltage": "1500"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            2.1624138,
+            48.695285
+          ],
+          [
+            2.1629514,
+            48.6956246
+          ],
+          [
+            2.1633555,
+            48.6958534
+          ],
+          [
+            2.163825,
+            48.6960705
+          ],
+          [
+            2.1642892,
+            48.6962368
+          ],
+          [
+            2.1649311,
+            48.6964003
+          ],
+          [
+            2.1655315,
+            48.6964901
+          ],
+          [
+            2.1659806,
+            48.6965222
+          ],
+          [
+            2.1661672,
+            48.696531
+          ],
+          [
+            2.1666924,
+            48.6965187
+          ],
+          [
+            2.1671787,
+            48.696475
+          ],
+          [
+            2.1676676,
+            48.6964038
+          ],
+          [
+            2.1699002,
+            48.6960361
+          ],
+          [
+            2.1704979,
+            48.6959806
+          ],
+          [
+            2.1709983,
+            48.6959713
+          ],
+          [
+            2.171634,
+            48.696004
+          ],
+          [
+            2.1723332,
+            48.6960966
+          ],
+          [
+            2.1769621,
+            48.6968556
+          ],
+          [
+            2.1773563,
+            48.6969316
+          ],
+          [
+            2.1778872,
+            48.6970401
+          ],
+          [
+            2.1790055,
+            48.6972456
+          ]
+        ]
+      },
+      "id": "way/103248855"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/103248859",
+        "electrified": "contact_line",
+        "frequency": "0",
+        "gauge": "1435",
+        "importance": "regional",
+        "name": "Ligne de Sceaux (RER B4)",
+        "operator": "RATP",
+        "railway": "rail",
+        "short_name": "RER B4",
+        "start_date": "1867-08-26",
+        "usage": "main",
+        "voltage": "1500"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            2.1584511,
+            48.6938329
+          ],
+          [
+            2.1578478,
+            48.6938139
+          ],
+          [
+            2.1574946,
+            48.6938318
+          ],
+          [
+            2.1571142,
+            48.6938632
+          ],
+          [
+            2.1565023,
+            48.6939519
+          ],
+          [
+            2.1557115,
+            48.6941377
+          ],
+          [
+            2.153586,
+            48.6947114
+          ]
+        ]
+      },
+      "id": "way/103248859"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/103248860",
+        "electrified": "contact_line",
+        "frequency": "0",
+        "gauge": "1435",
+        "importance": "regional",
+        "name": "Ligne de Sceaux (RER B4)",
+        "operator": "RATP",
+        "railway": "rail",
+        "short_name": "RER B4",
+        "start_date": "1867-08-26",
+        "usage": "main",
+        "voltage": "1500"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            2.1536004,
+            48.6947422
+          ],
+          [
+            2.1557127,
+            48.6941691
+          ],
+          [
+            2.1564784,
+            48.6939905
+          ],
+          [
+            2.1570964,
+            48.6938948
+          ],
+          [
+            2.1578427,
+            48.6938504
+          ],
+          [
+            2.1584412,
+            48.693868
+          ]
+        ]
+      },
+      "id": "way/103248860"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/103248861",
+        "bridge": "yes",
+        "electrified": "contact_line",
+        "frequency": "0",
+        "gauge": "1435",
+        "importance": "regional",
+        "layer": "1",
+        "name": "Ligne de Sceaux (RER B4)",
+        "operator": "RATP",
+        "railway": "rail",
+        "short_name": "RER B4",
+        "start_date": "1867-08-26",
+        "usage": "main",
+        "voltage": "1500"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            2.153298,
+            48.6948251
+          ],
+          [
+            2.1536004,
+            48.6947422
+          ]
+        ]
+      },
+      "id": "way/103248861"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/103248862",
+        "electrified": "contact_line",
+        "frequency": "0",
+        "gauge": "1435",
+        "importance": "regional",
+        "name": "Ligne de Sceaux (RER B4)",
+        "operator": "RATP",
+        "railway": "rail",
+        "short_name": "RER B4",
+        "start_date": "1867-08-26",
+        "usage": "main",
+        "voltage": "1500"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            2.1396831,
+            48.6983822
+          ],
+          [
+            2.1399031,
+            48.6983557
+          ],
+          [
+            2.1404074,
+            48.6982783
+          ],
+          [
+            2.1408629,
+            48.6981808
+          ],
+          [
+            2.1528749,
+            48.6949393
+          ],
+          [
+            2.153298,
+            48.6948251
+          ]
+        ]
+      },
+      "id": "way/103248862"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/103248863",
+        "bridge": "yes",
+        "electrified": "contact_line",
+        "frequency": "0",
+        "gauge": "1435",
+        "importance": "regional",
+        "layer": "1",
+        "name": "Ligne de Sceaux (RER B4)",
+        "operator": "RATP",
+        "railway": "rail",
+        "short_name": "RER B4",
+        "start_date": "1867-08-26",
+        "usage": "main",
+        "voltage": "1500"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            2.1622945,
+            48.6952109
+          ],
+          [
+            2.1624138,
+            48.695285
+          ]
+        ]
+      },
+      "id": "way/103248863"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/103248865",
+        "bridge": "yes",
+        "electrified": "contact_line",
+        "frequency": "0",
+        "gauge": "1435",
+        "importance": "regional",
+        "layer": "1",
+        "name": "Ligne de Sceaux (RER B4)",
+        "operator": "RATP",
+        "railway": "rail",
+        "short_name": "RER B4",
+        "start_date": "1867-08-26",
+        "usage": "main",
+        "voltage": "1500"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            2.1584412,
+            48.693868
+          ],
+          [
+            2.1585084,
+            48.6938709
+          ]
+        ]
+      },
+      "id": "way/103248865"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/617671102",
+        "electrified": "contact_line",
+        "frequency": "0",
+        "gauge": "1435",
+        "importance": "regional",
+        "name": "Ligne de Sceaux (RER B4)",
+        "operator": "RATP",
+        "railway": "rail",
+        "short_name": "RER B4",
+        "start_date": "1854-07-29",
+        "usage": "main",
+        "voltage": "1500"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            2.1790055,
+            48.6972456
+          ],
+          [
+            2.1817906,
+            48.6977575
+          ],
+          [
+            2.1821566,
+            48.6978104
+          ],
+          [
+            2.1828057,
+            48.6978588
+          ],
+          [
+            2.1829111,
+            48.6978683
+          ],
+          [
+            2.1830245,
+            48.6978803
+          ],
+          [
+            2.1832557,
+            48.6979141
+          ],
+          [
+            2.1835973,
+            48.6979842
+          ],
+          [
+            2.183779,
+            48.6980215
+          ],
+          [
+            2.1839382,
+            48.6980669
+          ],
+          [
+            2.1841028,
+            48.6981201
+          ]
+        ]
+      },
+      "id": "way/617671102"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/617671104",
+        "electrified": "contact_line",
+        "frequency": "0",
+        "gauge": "1435",
+        "importance": "regional",
+        "name": "Ligne de Sceaux (RER B4)",
+        "operator": "RATP",
+        "railway": "rail",
+        "short_name": "RER B4",
+        "start_date": "1854-07-29",
+        "usage": "main",
+        "voltage": "1500"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            2.1841371,
+            48.6980952
+          ],
+          [
+            2.1839231,
+            48.6980259
+          ],
+          [
+            2.1837957,
+            48.6979872
+          ],
+          [
+            2.1836393,
+            48.6979445
+          ],
+          [
+            2.1834417,
+            48.6978981
+          ],
+          [
+            2.1833074,
+            48.6978664
+          ],
+          [
+            2.1828429,
+            48.6977842
+          ],
+          [
+            2.1791668,
+            48.6971908
+          ],
+          [
+            2.1790442,
+            48.6971709
+          ]
+        ]
+      },
+      "id": "way/617671104"
+    }
+  ]
+}
