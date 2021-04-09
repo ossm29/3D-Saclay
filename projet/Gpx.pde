@@ -1,19 +1,19 @@
 class Gpx {
-  
+
   PShape track, posts,thumbtracks;
   Map3D map;
   int pointSelection;
   JSONArray features;
 
   public Gpx(Map3D map, String FileName){
-    
+
     //exception
     File ressource = dataFile(FileName);
     if (!ressource.exists() || ressource.isDirectory()) {
       println("ERROR: Trail file " + FileName + " not found.");
       exitActual();
     }
-        
+
     this.map = map;
     this.pointSelection = -1;
     int height = 50;
@@ -51,7 +51,7 @@ class Gpx {
     this.thumbtracks.strokeWeight(10);
     this.thumbtracks.stroke(0xFFFF3F3F);
 
-    
+
     for (int f=0; f<features.size(); f++) {
 
       JSONObject feature = features.getJSONObject(f);
@@ -118,7 +118,7 @@ class Gpx {
 
   void clic(int mouseX, int mouseY) {
     float min_dist = dist(0, 0, (int)this.map.width, (int)this.map.height);
-    
+
     for (int v = 0; v < this.thumbtracks.getVertexCount(); v++){
       PVector point = this.thumbtracks.getVertex(v);
       float distMouse = dist(screenX(point.x, point.y, point.z), screenY(point.x, point.y, point.z), mouseX, mouseY );
@@ -134,7 +134,7 @@ class Gpx {
           this.thumbtracks.setStroke(w, 0xFFFF3F3F);
       }
     }
-    
+
   }
 
   void description(int vector, Camera camera){
@@ -155,5 +155,5 @@ class Gpx {
     g.hint(PConstants.ENABLE_DEPTH_TEST);
     popMatrix();
   }
-  
+
 }
