@@ -83,6 +83,7 @@ public void add(String FileName, int building_color){
               ground.fill(building_color);
               ground.vertex(mp1.x, mp1.y, mp1.z);
               ground.vertex(mp2.x, mp2.y, mp2.z);
+              ground.noStroke();
 
               //creation des murs
               walls.beginShape(QUADS);
@@ -92,6 +93,7 @@ public void add(String FileName, int building_color){
               walls.vertex(mp2.x, mp2.y, mp2.z+10);
               walls.vertex(mp1.x, mp1.y, mp1.z+10);
               walls.emissive(0x30);
+              walls.noStroke();
 
               //creation du toît
               roof.beginShape();
@@ -99,6 +101,7 @@ public void add(String FileName, int building_color){
               roof.vertex(mp1.x, mp1.y, mp1.z+10);
               roof.vertex(mp2.x, mp2.y, mp2.z+10);
               roof.emissive(0x60);
+              roof.noStroke();
 
 
 
