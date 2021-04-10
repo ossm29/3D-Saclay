@@ -107,6 +107,10 @@ class Railways {
 
   }
 
+  void toggle(){
+    this.railways.setVisible(!this.railways.isVisible());
+
+  }
 
 
 }

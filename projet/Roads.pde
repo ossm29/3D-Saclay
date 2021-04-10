@@ -176,6 +176,9 @@ class Roads {
 
   }
 
+  void toggle(){
+    this.roads.setVisible(!this.roads.isVisible());
 
+  }
 
 }
