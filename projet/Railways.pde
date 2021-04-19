@@ -1,19 +1,25 @@
 class Railways {
+  //forme de la voie ferrée
   PShape railways;
 
   Map3D map;
   JSONArray features;
   int pointSelection;
 
-  public Railways(Map3D map, String FileName){
+  /**
+   * Constructeur de la classe
+   * @param map : La carte sur laquelle on travaille
+   * @param FileName : le nom du fichier de la voie ferrée (geojson)
+   */
+  public Railways(Map3D map, String FileName) {
 
-    //exception
+    //erreur : fichier inexistant
     File ressource = dataFile(FileName);
     if (!ressource.exists() || ressource.isDirectory()) {
       println("ERROR: file " + FileName + " not found.");
       exitActual();
     }
-
+    //On initialise la carte
     this.map = map;
 
     // Load geojson and check features collection
@@ -33,13 +39,13 @@ class Railways {
       return;
     }
 
+    //railways est un groupe de voies 
     this.railways = createShape(GROUP);
 
-
-    //this.railways.noFill();
+    //Largeur de la voie
     float laneWidth = 3;
 
-
+    //On itère sur chaque élément du groupe pour le tracer
     for (int f=0; f<features.size(); f++) {
       PShape lane;
       lane = createShape();
@@ -57,22 +63,28 @@ class Railways {
 
         // GPX Track
         JSONArray coordinates = geometry.getJSONArray("coordinates");
+        
+        //On trace les voies en utilisant la normale par rapport aux points voisins
+        
         if (coordinates != null)
           for (int p=0; p < coordinates.size()-1; p++) {
+            //1er point
             JSONArray point1 = coordinates.getJSONArray(p);
             Map3D.GeoPoint gp1 = this.map.new GeoPoint(point1.getFloat(0), point1.getFloat(1));
             //Map3D.ObjectPoint mp1 = this.map.new ObjectPoint(gp1);
 
             JSONArray point2 = coordinates.getJSONArray(p+1);
             Map3D.GeoPoint gp2 = this.map.new GeoPoint(point2.getFloat(0), point2.getFloat(1));
-            //Map3D.ObjectPoint mp2 = this.map.new ObjectPoint(gp2);
-            if(gp1.inside() && gp2.inside() ){
+
+            //Si le point est bien dans la map :
+            if (gp1.inside() && gp2.inside() ) {
               gp1.elevation += 7.5d;
               gp2.elevation += 7.5d;
               Map3D.ObjectPoint mp1 = this.map.new ObjectPoint(gp1);
               Map3D.ObjectPoint mp2 = this.map.new ObjectPoint(gp2);
               //this.railways.vertex(mp.x, mp.y, mp.z);
               PVector Va = new PVector(mp1.y - mp2.y, mp2.x - mp1.x).normalize().mult(laneWidth/2.0f);
+              //tracé des lignes (voies)
               lane.normal(0.0f, 0.0f, 1.0f);
               lane.vertex(mp1.x - Va.x, mp1.y - Va.y, mp1.z);
               lane.normal(0.0f, 0.0f, 1.0f);
@@ -96,21 +108,15 @@ class Railways {
 
       railways.addChild(lane);
     }
-
-
-
-
   }
-
-  void update(){
+  
+  //Procédure d'affichage
+  void update() {
     shape(this.railways);
-
   }
-
-  void toggle(){
+  
+  //Afficher - Enlever le tracé des voies ferrées 
+  void toggle() {
     this.railways.setVisible(!this.railways.isVisible());
-
   }
-
-
 }
