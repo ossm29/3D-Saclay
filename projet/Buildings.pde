@@ -1,17 +1,29 @@
 class Buildings {
+  //
   PShape buildings;
 
+  //Carte que l'on utilise
   Map3D map;
+  
   JSONArray features;
   int pointSelection;
-
-  public Buildings(Map3D map){
+  
+  /**
+  * Constructeur de la classe
+  * @params map : le terrain
+  */
+  public Buildings(Map3D map) {
+    //Buildings est un groupe de plusieurs bâtiments
     this.buildings = createShape(GROUP);
     this.map = map;
-
-}
-
-public void add(String FileName, int building_color){
+  }
+  
+  /**
+  * Procédure d'ajout d'un fichier au groupe de buildings
+  * @params FileName : nom du fichier (geojson)
+  * @params building_color : couleur du building
+  */
+  public void add(String FileName, int building_color) {
     //exception
     File ressource = dataFile(FileName);
     if (!ressource.exists() || ressource.isDirectory()) {
@@ -37,29 +49,30 @@ public void add(String FileName, int building_color){
       println("WARNING: GeoJSON file doesn't contain any feature.");
       return;
     }
-
+    
+    //itération sur chaque élément de features -> construction des batiments
     for (int f=0; f<features.size(); f++) {
 
-
+      //vérification du JSONObject
       JSONObject feature = features.getJSONObject(f);
       if (!feature.hasKey("geometry"))
         break;
-    //this.railways.noFill();
-    float laneWidth = 3;
-    JSONObject geometry = feature.getJSONObject("geometry");
-    JSONObject properties = feature.getJSONObject("properties");
+
+      float laneWidth = 3;
+      JSONObject geometry = feature.getJSONObject("geometry");
+      JSONObject properties = feature.getJSONObject("properties");
       //switch (geometry.getString("type", "undefined")) {
 
-        // GPX Track
-        JSONArray coordinates = geometry.getJSONArray("coordinates");
-        if (coordinates != null){
-          for (int p=0; p < coordinates.size(); p++) {
-            JSONArray coord_points = coordinates.getJSONArray(p);
+      // GPX Track
+      JSONArray coordinates = geometry.getJSONArray("coordinates");
+      if (coordinates != null) {
+        for (int p=0; p < coordinates.size(); p++) {
+          JSONArray coord_points = coordinates.getJSONArray(p);
 
-            PShape ground = createShape();
-            PShape walls = createShape();
-            PShape roof = createShape();
-            for (int j=0; j < coord_points.size()-1; j++) {
+          PShape ground = createShape();
+          PShape walls = createShape();
+          PShape roof = createShape();
+          for (int j=0; j < coord_points.size()-1; j++) {
             JSONArray point1 = coord_points.getJSONArray(j);
 
             JSONArray point2 = coord_points.getJSONArray(j+1);
@@ -68,18 +81,19 @@ public void add(String FileName, int building_color){
             Map3D.GeoPoint gp2 = this.map.new GeoPoint(point2.getFloat(0), point2.getFloat(1));
 
 
-            if(gp1.inside() && gp2.inside() ){
+            if (gp1.inside() && gp2.inside() ) {
               gp1.elevation += 7.5d;
               gp2.elevation += 7.5d;
               Map3D.ObjectPoint mp1 = this.map.new ObjectPoint(gp1);
               Map3D.ObjectPoint mp2 = this.map.new ObjectPoint(gp2);
 
-
+              //on mémorise le nombre d'étages du building
               int levels = properties.getInt("building:levels", 1);
               float top = Map3D.heightScale * 3.0f * (float)levels;
 
               //creation du sol
               ground.beginShape();
+              //couleur
               ground.fill(building_color);
               ground.vertex(mp1.x, mp1.y, mp1.z);
               ground.vertex(mp2.x, mp2.y, mp2.z);
@@ -102,40 +116,25 @@ public void add(String FileName, int building_color){
               roof.vertex(mp2.x, mp2.y, mp2.z+10);
               roof.emissive(0x60);
               roof.noStroke();
-
-
-
             }
-
           }
-
+          //fermeture des POLYGONS 
           ground.endShape(CLOSE);
           walls.endShape();
           roof.endShape(CLOSE);
           buildings.addChild(ground);
           buildings.addChild(walls);
           buildings.addChild(roof);
-
-
-
-
-
+        }
+      }
     }
   }
-}
 
-
-
-  }
-
-  void update(){
+  void update() {
     shape(this.buildings);
-
   }
 
-  void toggle(){
+  void toggle() {
     this.buildings.setVisible(!this.buildings.isVisible());
-
   }
-
 }
