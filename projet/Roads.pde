@@ -1,19 +1,26 @@
 class Roads {
+
+  //Forme route
   PShape roads;
 
-  Map3D map;
+  Map3D map; // Carte que l'on utilise
   JSONArray features;
   int pointSelection;
 
-  public Roads(Map3D map, String FileName){
+  /** Constructeur de la classe
+   * @param map
+   * @param FileName : nom du fichier des routes (geojson)
+   */
+  public Roads(Map3D map, String FileName) {
 
-    //exception
+    //erreur : fichier inexistant
     File ressource = dataFile(FileName);
     if (!ressource.exists() || ressource.isDirectory()) {
       println("ERROR: file " + FileName + " not found.");
       exitActual();
     }
 
+    //On initialise notre carte
     this.map = map;
 
     // Load geojson and check features collection
@@ -32,18 +39,19 @@ class Roads {
       println("WARNING: GeoJSON file doesn't contain any feature.");
       return;
     }
-
+    //roads est un ensemble de routes distinctes
     this.roads = createShape(GROUP);
 
 
     //this.railways.noFill();
     float laneWidth = 3;
-
+    
+    //Couleur et type de route
     String laneKind = "unclassified";
     color laneColor = 0xFFFF0000;
-     double laneOffset = 1.50d;
+    double laneOffset = 1.50d;
 
-
+     //On itère sur chaque élément du groupe pour le tracer
     for (int f=0; f<features.size(); f++) {
       PShape lane;
       lane = createShape();
@@ -53,77 +61,84 @@ class Roads {
       JSONObject feature = features.getJSONObject(f);
       if (!feature.hasKey("geometry"))
         break;
-        JSONObject properties = feature.getJSONObject("properties");
-        laneKind = properties.getString("highway", "unclassified");
-        switch (laneKind) {
-        case "motorway":
+        //On récupère le type de la route
+      JSONObject properties = feature.getJSONObject("properties");
+      laneKind = properties.getString("highway", "unclassified");
+      
+      //On affiche la route selon son type
+      switch (laneKind) {
+      case "motorway":
         laneColor = 0xFFe990a0;
         laneOffset = 3.75d;
         laneWidth = 8.0f;
         break;
 
-        case "trunk":
+      case "trunk":
         laneColor = 0xFFfbb29a;
         laneOffset = 3.60d;
         laneWidth = 7.0f;
         break;
 
-        case "trunk_link":
-        case "primary":
+      case "trunk_link":
+      case "primary":
         laneColor = 0xFFfdd7a1;
         laneOffset = 3.45d;
-        laneWidth = 6.0f; break;
-        case "secondary":
-        case "primary_link":
+        laneWidth = 6.0f; 
+        break;
+      case "secondary":
+      case "primary_link":
 
         laneColor = 0xFFf6fabb;
         laneOffset = 3.30d;
         laneWidth = 5.0f;
         break;
-        case "tertiary":
-        case "secondary_link":
+      case "tertiary":
+      case "secondary_link":
         laneColor = 0xFFE2E5A9;
         laneOffset = 3.15d;
-        laneWidth = 4.0f; break;
-        case "tertiary_link":
-        case "residential":
-        case "construction":
-        case "living_street":
+        laneWidth = 4.0f; 
+        break;
+      case "tertiary_link":
+      case "residential":
+      case "construction":
+      case "living_street":
 
         laneColor = 0xFFB2B485;
         laneOffset = 3.00d;
         laneWidth = 3.5f;
         break;
 
-        case "corridor":
-        case "cycleway":
-        case "footway":
-         case "path":
-        case "pedestrian":
-        case "service":
-        case "steps":
-        case "track":
-        case "unclassified":
+      case "corridor":
+      case "cycleway":
+      case "footway":
+      case "path":
+      case "pedestrian":
+      case "service":
+      case "steps":
+      case "track":
+      case "unclassified":
         laneColor = 0xFFcee8B9;
         laneOffset = 2.85d;
-        laneWidth = 1.0f; break;
+        laneWidth = 1.0f; 
+        break;
 
-        default:
+      default:
         laneColor = 0xFFFF0000;
         laneOffset = 1.50d;
         laneWidth = 0.5f;
 
         println("WARNING: Roads kind not handled : ", laneKind);
-         break;
-        }
-        // Display threshold (increase if more performance needed...) if (laneWidth < 1.0f)
-        lane.stroke(laneColor);
-        lane.fill(laneColor);
+        break;
+      }
+      // Display threshold (increase if more performance needed...) if (laneWidth < 1.0f)
+      lane.stroke(laneColor);
+      lane.fill(laneColor);
       JSONObject geometry = feature.getJSONObject("geometry");
       switch (geometry.getString("type", "undefined")) {
 
       case "LineString":
-
+       //On trace la route en utilisant les normales aux autres points (comme dans railways
+       
         // GPX Track
         JSONArray coordinates = geometry.getJSONArray("coordinates");
         if (coordinates != null)
@@ -135,7 +150,7 @@ class Roads {
             JSONArray point2 = coordinates.getJSONArray(p+1);
             Map3D.GeoPoint gp2 = this.map.new GeoPoint(point2.getFloat(0), point2.getFloat(1));
             //Map3D.ObjectPoint mp2 = this.map.new ObjectPoint(gp2);
-            if(gp1.inside() && gp2.inside() ){
+            if (gp1.inside() && gp2.inside() ) {
               gp1.elevation += 7.5d;
               gp2.elevation += 7.5d;
               Map3D.ObjectPoint mp1 = this.map.new ObjectPoint(gp1);
@@ -159,26 +174,22 @@ class Roads {
         println("WARNING: GeoJSON '" + geometry.getString("type", "undefined") + "' geometry type not handled.");
         break;
       }
-
+      //Couleur : blanc
       lane.fill(255, 255, 255);
       lane.endShape();
 
       roads.addChild(lane);
     }
-
-
-
-
   }
-
-  void update(){
+  
+  //Procédure d'affichage
+  void update() {
     shape(this.roads);
-
   }
-
-  void toggle(){
+  
+  
+  //Afficher - Enlever les routes
+  void toggle() {
     this.roads.setVisible(!this.roads.isVisible());
-
   }
-
 }
